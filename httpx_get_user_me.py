@@ -29,3 +29,4 @@ user_me_response = httpx.get(
 )
 assert user_me_response.status_code == 200, f"Статус код {user_me_response.status_code} ошибочно отличается от ожидаемого"
 assert user_me_response.json() == user_data, 'Данные в ответе ошибочяно отличаются от ожидаемых'
+print(user_me_response.json())
