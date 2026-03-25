@@ -7,7 +7,7 @@ from clients.api_client import APIClient
 
 class CreateUserRequestDict(TypedDict):
     """
-    Описание структуры запроса на аутентификацию.
+    Описание структуры запроса на создание клиента.
     """
     email: str
     password: str
